@@ -44,16 +44,28 @@
                 android:textSize="@dimen/_15ssp" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-         
+                android:layout_marginHorizontal="@dimen/_5sdp"
 
-                android:paddingHorizontal="@dimen/_2sdp"
+                android:layout_weight="1"
+
 
                 android:text="@{model.alt_description}"
                 android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/clear_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+
+                android:paddingHorizontal="@dimen/_2sdp"
+
+                android:text="Cancel This Job"
+                android:textSize="@dimen/_14ssp" />
 
         </LinearLayout>
 

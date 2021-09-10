@@ -60,7 +60,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
             super(binding.getRoot());
             this.binding = binding;
 
+            binding.clearText.setOnClickListener(view -> {
 
+                listener.onClick(view, getAdapterPosition());
+            });
 
 
         }

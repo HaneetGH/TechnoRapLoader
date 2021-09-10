@@ -20,7 +20,8 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : BaseClass() {
-
+    @Inject
+    lateinit var technoRapLoader: TechnoRapLoader
     private lateinit var binding: ActivityMainBinding
     lateinit var listAdapter: ListAdapter;
     private val viewModel by viewModels<MainActivityViewModel>()
@@ -41,12 +42,16 @@ class MainActivity : BaseClass() {
         setAdapter()
         viewModel.setStateEvent(MainStateEvent.FetchImages)
         viewModel.uiState.observe(this, { parse(it) })
+        binding.fab.setOnClickListener { technoRapLoader.cancelAll() }
     }
 
     private fun setAdapter() {
         listAdapter = ListAdapter(listOfImages, this) { v, position ->
             when (v.id) {
+                R.id.clear_text -> {
+                    technoRapLoader.cancelTask(listOfImages[position].urls.thumb)
 
+                }
             }
 
 

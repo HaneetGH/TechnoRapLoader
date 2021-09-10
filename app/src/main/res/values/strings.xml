@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TechnoRapLoader</string>
+    <string name="cancel_all">Cancel All</string>
 </resources>
