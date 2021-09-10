@@ -1,4 +1,4 @@
-package com.haneet.assignment.di.scopes
+package com.technorapper.technoraploader.di.scopes
 
 import javax.inject.Scope
 

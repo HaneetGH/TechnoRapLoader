@@ -1,4 +1,4 @@
-package com.haneet.assignment.di.scopes
+package com.technorapper.technoraploader.di.scopes
 
 import java.lang.annotation.Documented
 import java.lang.annotation.Retention
