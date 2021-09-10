@@ -64,7 +64,7 @@
 
                 android:paddingHorizontal="@dimen/_2sdp"
 
-                android:text="Cancel This Job"
+                android:text="Cancel"
                 android:textSize="@dimen/_14ssp" />
 
         </LinearLayout>

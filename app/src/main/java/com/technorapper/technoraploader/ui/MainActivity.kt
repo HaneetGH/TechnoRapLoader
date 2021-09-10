@@ -1,7 +1,9 @@
 package com.technorapper.technoraploader.ui
 
+import android.opengl.Visibility
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -70,7 +72,7 @@ class MainActivity : BaseClass() {
                         when (it.task) {
                             Task.FETCH -> {
                                 try {
-                                    binding.contentLoadingProgressBar.hide()
+                                    binding.contentLoadingProgressBar.visibility= View.GONE
                                     val value = it.data as List<UnSplashImageListModelItem>
                                     if (value.isNotEmpty())
                                         setData(value)
@@ -89,11 +91,11 @@ class MainActivity : BaseClass() {
 
                 }
                 is DataState.Error -> {
-                    binding.contentLoadingProgressBar.show()
+                    binding.contentLoadingProgressBar.visibility= View.VISIBLE
                     Log.d("Api Response", "ERROR ${it.exception.toString()}");
                 }
                 is DataState.Loading -> {
-                    binding.contentLoadingProgressBar.show()
+                    binding.contentLoadingProgressBar.visibility= View.VISIBLE
                     Log.d("Api Response", "LOADING $it");
 
 
