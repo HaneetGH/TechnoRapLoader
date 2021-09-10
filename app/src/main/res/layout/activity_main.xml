@@ -16,7 +16,7 @@
         tools:context=".ui.MainActivity">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/slotLit"
+            android:id="@+id/items"
 
             adapter="@{adapter}"
             android:layout_width="0dp"

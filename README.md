@@ -24,7 +24,7 @@ if you don't already have it.
 2. Import the sample into Android Studio.
 3. Build and run the sample.
 
-<h2>features</h2>
+<h2>Features</h2>
 
 <ul>
  <li>To be able to asynchronously load the image onto the ImageView</li>
