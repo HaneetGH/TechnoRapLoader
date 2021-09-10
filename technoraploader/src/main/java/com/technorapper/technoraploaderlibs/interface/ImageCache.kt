@@ -1,4 +1,4 @@
-package com.technorapper.technoraploader.`interface`
+package com.technorapper.technoraploaderlibs.`interface`
 
 import android.graphics.Bitmap
 

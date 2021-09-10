@@ -1,11 +1,11 @@
-package com.technorapper.technoraploader.data
+package com.technorapper.technoraploaderlibs.data
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Handler
 import android.os.Looper
 import android.widget.ImageView
-import com.technorapper.technoraploader.cache.CacheRepository
+import com.technorapper.technoraploaderlibs.cache.CacheRepository
 
 import java.net.HttpURLConnection
 import java.net.URL

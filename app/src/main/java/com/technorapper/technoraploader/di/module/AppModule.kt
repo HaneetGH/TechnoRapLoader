@@ -2,7 +2,7 @@ package com.technorapper.technoraploader.di.module
 
 import android.content.Context
 
-import com.technorapper.technoraploader.core.TechnoRapLoader
+import com.technorapper.technoraploaderlibs.core.TechnoRapLoader
 import dagger.Module
 import dagger.Provides
 
@@ -24,7 +24,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun technoRapLoader(@ApplicationContext app: Context): TechnoRapLoader? {
+    fun technoRapLoader(@ApplicationContext app: Context): TechnoRapLoader {
 
 
         return TechnoRapLoader.getInstance(app)

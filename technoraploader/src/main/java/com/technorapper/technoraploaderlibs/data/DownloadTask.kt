@@ -1,4 +1,4 @@
-package com.technorapper.technoraploader.data
+package com.technorapper.technoraploaderlibs.data
 
 import java.util.concurrent.Callable
 

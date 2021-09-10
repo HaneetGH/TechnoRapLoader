@@ -1,10 +1,10 @@
-package com.technorapper.technoraploader.cache
+package com.technorapper.technoraploaderlibs.cache
 
 import android.content.Context
 import android.graphics.Bitmap
-import com.technorapper.technoraploader.`interface`.ImageCache
+import com.technorapper.technoraploaderlibs.`interface`.ImageCache
 
-class CacheRepository(context: Context , newMaxSize: Int ): ImageCache{
+class CacheRepository(context: Context , newMaxSize: Int ): ImageCache {
 
     val diskCache = DiskCache.getInstance(context)
     val memoryCache = MemoryCache(newMaxSize)

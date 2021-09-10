@@ -1,10 +1,10 @@
-package com.technorapper.technoraploader.cache
+package com.technorapper.technoraploaderlibs.cache
 
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import com.jakewharton.disklrucache.DiskLruCache
-import com.technorapper.technoraploader.`interface`.ImageCache
+import com.technorapper.technoraploaderlibs.`interface`.ImageCache
 import java.io.*
 import java.math.BigInteger
 import java.security.MessageDigest

@@ -1,13 +1,13 @@
-package com.technorapper.technoraploader.cache
+package com.technorapper.technoraploaderlibs.cache
 
 import android.graphics.Bitmap
 
 import android.util.Log
 import android.util.LruCache
-import com.technorapper.technoraploader.`interface`.ImageCache
-import com.technorapper.technoraploader.cache.utils.Config
+import com.technorapper.technoraploaderlibs.`interface`.ImageCache
+import com.technorapper.technoraploaderlibs.cache.utils.Config
 
-class MemoryCache (newMaxSize: Int) :ImageCache {
+class MemoryCache (newMaxSize: Int) : ImageCache {
 
 
     private val cache : LruCache<String, Bitmap>

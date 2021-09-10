@@ -1,11 +1,11 @@
-package com.technorapper.technoraploader.core
+package com.technorapper.technoraploaderlibs.core
 import android.content.Context
 import android.graphics.Bitmap
 import android.widget.ImageView
-import com.technorapper.technoraploader.cache.CacheRepository
-import com.technorapper.technoraploader.cache.utils.Config
-import com.technorapper.technoraploader.data.DownloadImageTask
-import com.technorapper.technoraploader.data.DownloadTask
+import com.technorapper.technoraploaderlibs.cache.CacheRepository
+import com.technorapper.technoraploaderlibs.cache.utils.Config
+import com.technorapper.technoraploaderlibs.data.DownloadImageTask
+import com.technorapper.technoraploaderlibs.data.DownloadTask
 
 import java.util.concurrent.Executors
 import java.util.concurrent.Future
