@@ -1,0 +1,3 @@
+rootProject.name = "TechnoRapLoader"
+include ':app'
+include ':technoraploader'
