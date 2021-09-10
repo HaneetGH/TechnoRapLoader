@@ -70,6 +70,7 @@ class MainActivity : BaseClass() {
                         when (it.task) {
                             Task.FETCH -> {
                                 try {
+                                    binding.contentLoadingProgressBar.hide()
                                     val value = it.data as List<UnSplashImageListModelItem>
                                     if (value.isNotEmpty())
                                         setData(value)
@@ -88,10 +89,11 @@ class MainActivity : BaseClass() {
 
                 }
                 is DataState.Error -> {
-
+                    binding.contentLoadingProgressBar.show()
                     Log.d("Api Response", "ERROR ${it.exception.toString()}");
                 }
                 is DataState.Loading -> {
+                    binding.contentLoadingProgressBar.show()
                     Log.d("Api Response", "LOADING $it");
 
 
