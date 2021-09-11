@@ -61,3 +61,12 @@ if you don't already have it.
    -to cancel all tasks
     
     imageLoader.cancelAll()
+
+<h2>Unit Test Case</h2>
+<ul>
+- Some Small Test cases also includes
+ <li>Check Fab Button visibility</li>
+ <li>Wait for 5 Sec </li>
+ <li>Test Recyclerview items count </li> 
+ 
+</ul>
