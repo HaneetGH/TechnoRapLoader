@@ -21,7 +21,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : BaseClass() {
+class  MainActivity : BaseClass() {
     @Inject
     lateinit var technoRapLoader: TechnoRapLoader
     private lateinit var binding: ActivityMainBinding

@@ -20,9 +20,10 @@ class MainActivityInteractor @Inject constructor(
             // var response: VehicleCategoriesList = null
             try {
                 var response = mainRepo.fetchImages()
-                emit(DataState.Success(response, Task.FETCH))
+                var filterList =response.filter { !it.alt_description.isNullOrBlank() || !it.alt_description.isNullOrEmpty()  }
+                emit(DataState.Success(filterList, Task.FETCH))
             } catch (e: Exception) {
-                //  emit(DataState.ErrorString(e.toString(), Task.VEHICLE_LIST))
+                 emit(DataState.ErrorString(e.toString(), Task.FETCH))
             }
 
 
