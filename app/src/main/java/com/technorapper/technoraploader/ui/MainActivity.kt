@@ -28,16 +28,6 @@ class MainActivity : BaseClass() {
     lateinit var listAdapter: ListAdapter;
     private val viewModel by viewModels<MainActivityViewModel>()
     private val listOfImages: ArrayList<UnSplashImageListModelItem> = ArrayList()
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-
-    }
-
-    override fun onResume() {
-        super.onResume()
-
-    }
 
     override fun setBinding() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -100,6 +90,7 @@ class MainActivity : BaseClass() {
 
 
                 }
+                else -> {}
             }
         }
 

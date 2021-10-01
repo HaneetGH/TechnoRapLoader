@@ -15,12 +15,12 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainActivityViewModel @Inject constructor(
-    private val repository: MainActivityRepository
+    private val repository: MainActivityInteractor
 ) : ViewModel() {
     override fun onCleared() {
+
         super.onCleared()
     }
-
 
 
     private val _uiState: MutableLiveData<DataState> = MutableLiveData()
